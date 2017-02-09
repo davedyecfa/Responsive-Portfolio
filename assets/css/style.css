@@ -157,7 +157,7 @@ h3,
 .main-section {
   padding: 30px;
   margin: 0 0 40px 0;
-  width: 450px;
+  width: 600px;
   max-width: 650px;
   float: left;
   background: #fff;
@@ -166,7 +166,7 @@ h3,
 /*portfolio page*/
 .work {
   position: relative;
-  width: 274px;
+  width: 234px;
   overflow: auto;
   float: left;
   margin: 20px 0 25px;
@@ -238,13 +238,14 @@ input[type=submit] {
 @media screen and (max-width: 980px) {
 
 	.main-section {
-		text-align: center;
+		text-align: middle;
 		width: 60%;
   }
 	.auth-image {
-   display: block !important;
-   margin: auto !important;
-   width: 50%;
+   display: block;
+   margin: auto;
+   width: 100%;
+   float: none;
 
     }
 
@@ -253,28 +254,124 @@ input[type=submit] {
 
   }
 
+  .work {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  float: left;
+  margin: 20px 0 25px;
+
+  }
+
+  .work:nth-child(even) {
+  margin-right: 0px;
+  width: 100%;
+}
+
 
 }
 
 @media screen and (max-width: 768px) {
+
+  
+  .main-section {
+    float: left;
+    width: 100%;
+    text-align: left;
+    
+    }
+
+
+    
   .inline-block {
     display: inline-block;
   }
 
 	.auth-image {
-		margin-right: 0;
-		margin-left: 17px;
+  width: 50%;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+  float: left;
+  }
+
+  p {
+   clear: none;
 
   }
 
+  .sidebar{
+    float: left;
+    width: 100%;
+    max-width: 100%;
+
+
+  }
+
+.work {
+  position: relative;
+  width: 234px;
+  overflow: auto;
+  float: left;
+  margin: 20px 0 25px;
+}
+.work:nth-child(even) {
+  margin-right: 40px;
+  width: 234px;
+}
+
+.container {
+  clear: both;
+}
+
+  
+}
   @media screen and (max-width: 640px) {
+    p {
+      clear: both;
+    }
 
-	.inline-block {
-  display: inline-block;
-  }
 
   	.auth-image {
-		margin-right: 0;
-		margin-left: 17px;
+    float: none; 
+    width: 100%;
+    display: block;
 
-	}	
+	}
+  #logo {
+    width: 100%;
+  }	
+
+  .header-info {
+    margin-right: 0;
+    margin-left: 0;
+
+  }
+  .main-section {
+    margin-top: 10%;
+  }
+
+  nav {
+    width: 100%;
+    text-align: center;
+    }
+
+  nav a {
+    justify-content: space-around;
+    width: 20%;
+  }
+
+    .work {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  float: left;
+  margin: 20px 0 25px;
+
+  }
+
+  .work:nth-child(even) {
+  margin-right: 0px;
+  width: 100%;
+}
+  }
